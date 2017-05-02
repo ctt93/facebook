@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="app_name">脸书 </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">脸书</string>
+    <string name="seeall">上帝视角</string>
+    <string name="start">开始游戏</string>
+
+</resources>

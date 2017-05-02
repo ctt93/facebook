@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/card">
+     <RelativeLayout 
+        android:id="@+id/card_title_bar" 
+  		android:layout_width="fill_parent"
+  		android:layout_height="45dp"
+  		android:background="@drawable/title_bar"
+  		android:gravity="center_vertical"  >
+  			<Button
+            	android:layout_width="70dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:text="返回"
+            	android:textSize="14sp"
+            	android:textColor="#fff"
+            	android:onClick="card_back"
+           		android:background="@drawable/title_btn_back"/>  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="签到卡"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" /> 
+			<ImageButton 
+			    android:layout_width="67dp" 
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+        		android:src="@drawable/mm_title_btn_menu"
+				android:background="@drawable/title_btn_right"
+				android:onClick="linshi3" 
+			    />      
+	</RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/qiandao_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+       
+        <TextView 
+        android:id="@+id/qiandao"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="0.8"
+        />
+        <TextView
+        android:id="@+id/mytime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"/>
+
+    
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

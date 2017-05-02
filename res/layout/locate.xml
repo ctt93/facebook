@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+      <RelativeLayout 
+        android:id="@+id/locate_title_bar" 
+  		android:layout_width="fill_parent"
+  		android:layout_height="45dp"
+  		android:background="@drawable/title_bar"
+  		android:gravity="center_vertical"  >
+  			<Button
+            	android:layout_width="70dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:text="返回"
+            	android:textSize="14sp"
+            	android:textColor="#fff"
+            	android:onClick="locate_back"
+           		android:background="@drawable/title_btn_back"/>  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="签到打卡"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" /> 
+			<ImageButton 
+			    android:layout_width="67dp" 
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+        		android:src="@drawable/mm_title_btn_menu"
+				android:background="@drawable/title_btn_right"
+				android:onClick="linshi2" 
+			    />      
+	</RelativeLayout>
+			        
+	<com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:clickable="true"/>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    
+	     >
+
+	    <Button
+	        android:id="@+id/qiandao"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="76dp"
+	        android:onClick="in"
+	        android:text="签到" />
+
+	    <Button
+	        android:id="@+id/daka"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginRight="76dp"
+	         android:layout_marginLeft="20dp"
+	        android:layout_toRightOf="@+id/qiandao"
+	        android:onClick="out"
+	        android:text="打卡" />
+	    <CheckBox 
+	        android:id="@+id/check"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:text="已签到"
+	        android:clickable="false"
+	        android:checked="false"
+	        
+	        />
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	    <ImageButton
+	        android:id="@+id/wanmei"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/wanmei_card"
+	        android:onClick="card" 
+	        android:layout_weight="0.6"/>
+
+	    <TextView
+	         android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toRightOf="@+id/wanmei"
+	        android:layout_alignParentTop="true"
+	        android:text="签到卡"
+	        android:textColor="#00CCFF"
+	        android:layout_gravity="center"
+	        android:layout_weight="0.4"
+	        >
+	        
+	    </TextView>
+	    </LinearLayout>
+
+	</RelativeLayout>
+	 <TextView 
+			        android:id="@+id/location"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        
+			        />
+	  </LinearLayout>
